@@ -15,8 +15,8 @@ export default function ListingSearch() {
                 <FormField label="Type" id="type" as="select"><Options items={opts.types} /></FormField>
                 <FormField label="Bedrooms" id="beds" as="select"><Options items={opts.beds} /></FormField>
                 <FormField label="Baths" id="baths" as="select"><Options items={opts.baths} /></FormField>
-                <FormField label="Min Price" id="min" type="number" min="0" step="1000" inputMode="numeric" placeholder="$ No min"/>
-                <FormField label="Max Price" id="max" type="number" min="0" step="1000" inputMode="numeric" placeholder="$ No max"/>
+                <FormField label="Min Price" id="min" type="number" min="0" step="1000" inputMode="numeric" placeholder="$"/>
+                <FormField label="Max Price" id="max" type="number" min="0" step="1000" inputMode="numeric" placeholder="$"/>
                 <FormField label="Sort By" id="sort" as="select" className="search__wide"><Options items={opts.sort}/></FormField>
                 <Button type="submit" className="search__submit">Search Now</Button>
             </form>
